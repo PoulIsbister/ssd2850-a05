@@ -47,6 +47,7 @@ ex. `chore: rewrite article copy`
 
 Use [BEM](https://en.bem.info/methodology) when styling components.
 
+### Colours
 For colours, pick from [TailwindCSS Colors](https://tailwindcss.com/docs/colors#Colors),
 find the corresponding CSS variable in [styles/colours.css](styles/colours.css) and use that.
 ```css
@@ -63,6 +64,9 @@ in multiple places, append a new CSS variable to [styles/colours.css](styles/col
     --color-something: #aaff00;
 }
 ```
+
+### Media Breakpoints
+Media breakpoints should follow the Tailwind documentation [as outlined here](https://tailwindcss.com/docs/responsive-design#:~:text=Breakpoint%20prefix,96rem%29%20%7B%20%2E%2E%2E%20%7D).
 
 ## Examples
 
