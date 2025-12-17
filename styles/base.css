@@ -35,3 +35,11 @@ main {
 footer {
   grid-area: footer;
 }
+
+a {
+  color: var(--color-green-800);
+}
+
+a:visited {
+  color: var(--color-emerald-950);
+}
