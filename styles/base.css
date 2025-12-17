@@ -1,6 +1,15 @@
 @import "./colours.css";
 @import "./utilities/normalize.css";
 
+@font-face {
+  font-family: PlayfairDisplay;
+  src: url(../fonts/PlayfairDisplay/PlayfairDisplay-variable.ttf);
+}
+
+* {
+  font-family: PlayfairDisplay;
+}
+
 body {
   display: grid;
   grid-template-areas:
