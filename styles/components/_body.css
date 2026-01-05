@@ -12,3 +12,28 @@
     border-radius: 0.5rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
+
+
+/* .featured-article {
+  position: relative;
+  padding: 1.75rem;
+  border-radius: 1rem;
+
+  background: linear-gradient(
+    180deg,
+    #ffffff 0%,
+    #fafafa 100%
+  );
+
+  border: 2px solid transparent;
+  background-clip: padding-box;
+
+  box-shadow:
+    0 10px 25px rgba(0, 0, 0, 0.08),
+    0 0 0 1px rgba(212, 175, 55, 0.35); /* gold halo */
+
+  /* transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease; */
+/* } */
