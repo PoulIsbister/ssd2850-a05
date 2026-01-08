@@ -11,6 +11,10 @@
   font-family: PlayfairDisplay;
 }
 
+:root {
+  --page-padding: 0.5rem;
+}
+
 body {
   display: grid;
   grid-template-areas:
@@ -24,6 +28,12 @@ body {
   min-height: 100vh;
 
   background: var(--chrome-bg);
+}
+
+header,
+main,
+footer {
+  padding: 0 var(--page-padding) 0 var(--page-padding);
 }
 
 header,
