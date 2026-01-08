@@ -4,7 +4,6 @@
 }
 
 .header-inner__subcribe {
-  color: var(--color-indigo-50);
   text-decoration: none;
   align-self: center;
   position: absolute;
@@ -53,11 +52,6 @@
 
 .nav-bar__link {
   text-decoration: none;
-  color: var(--color-indigo-50);
-}
-
-.nav-bar__item:visited {
-  color: var(--color-indigo-50);
 }
 
 @media (min-width: 64em) {

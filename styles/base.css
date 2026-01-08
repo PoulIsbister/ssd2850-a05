@@ -55,9 +55,9 @@ footer {
 }
 
 a {
-  color: var(--color-green-800);
+  color: var(--color-primary-800);
 }
 
 a:visited {
-  color: var(--color-emerald-950);
+  color: var(--color-primary-900);
 }
