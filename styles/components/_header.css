@@ -1,6 +1,5 @@
 .header-inner {
   display: flex;
-  background-color: var(--color-alt2);
   height: 2rem;
 }
 
@@ -13,7 +12,6 @@
 }
 
 .nav-bar {
-  background-color: var(--color-alt);
   display: flex;
   flex-direction: column;
 }
@@ -22,7 +20,6 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  background-color: var(--color-alt);
 }
 
 .nav-bar__title {

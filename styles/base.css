@@ -26,6 +26,11 @@ body {
   background: var(--chrome-bg);
 }
 
+header,
+footer {
+  background: var(--color-alt);
+}
+
 header {
   grid-area: header;
 }
