@@ -16,9 +16,11 @@
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "format": "npx prettier -w index.html"
+    "format": "npx prettier -w index.html",
+    "prepare": "husky"
   },
   "devDependencies": {
+    "husky": "^9.1.7",
     "prettier": "^3.7.4"
   }
 }
