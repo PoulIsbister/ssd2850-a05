@@ -1,2 +1,63 @@
 @import "./colours.css";
 @import "./utilities/normalize.css";
+@import "./utilities/icons.css";
+
+@font-face {
+  font-family: PlayfairDisplay;
+  src: url(../fonts/PlayfairDisplay/PlayfairDisplay-variable.ttf);
+}
+
+* {
+  font-family: PlayfairDisplay;
+}
+
+:root {
+  --page-padding: 0.5rem;
+}
+
+body {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+
+  min-height: 100vh;
+
+  background: var(--chrome-bg);
+}
+
+header,
+main,
+footer {
+  padding: 0 var(--page-padding) 0 var(--page-padding);
+}
+
+header,
+footer {
+  background: var(--color-alt);
+}
+
+header {
+  grid-area: header;
+}
+
+main {
+  grid-area: main;
+  background: var(--page-bg);
+}
+
+footer {
+  grid-area: footer;
+}
+
+a {
+  color: var(--color-primary-800);
+}
+
+a:visited {
+  color: var(--color-primary-900);
+}
