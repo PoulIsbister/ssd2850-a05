@@ -1,6 +1,8 @@
 @import "./colours.css";
 @import "./utilities/normalize.css";
 @import "./utilities/icons.css";
+@import "./utilities/utils.css";
+@import "./layout.css";
 
 @font-face {
   font-family: PlayfairDisplay;
