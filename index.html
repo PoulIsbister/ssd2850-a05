@@ -9,7 +9,11 @@
     <link rel="stylesheet" href="styles/components/_article.css" />
     <link rel="stylesheet" href="styles/components/_template.css" />
     <link rel="stylesheet" href="styles/components/_classified.css" />
+    <link rel="stylesheet" href="styles/components/_popupAds.css" />
 
+    <script type="module" src="scripts/popupAds/draggable.js" defer></script>
+    <script type="module" src="scripts/popupAds/schizoToggle.js" defer></script>
+    
     <title>Index</title>
   </head>
 
@@ -44,6 +48,13 @@
     </header>
     <main class="main--two-column">
       <div>
+        <div id="popupOneBox" class="dragBox" data-default-vh="40"> 
+          <!-- Include a header DIV with the same name as the draggable DIV, followed by "header" -->
+          <button class="exit-btn stopSchizo-btn">✕</button>
+          <div id="popupOneHeader" class="dragBoxHeader">Click here to move</div>
+            <p class="blinkText">YOU WON'T BELIEVE YOUR EYES</p>
+          </div>
+        </div>
         <div class="mx-auto classified classified--media-only">
           <figure class="classified__media">
             <img
