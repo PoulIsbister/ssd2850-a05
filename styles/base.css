@@ -14,7 +14,8 @@
 }
 
 :root {
-  --page-padding: 0.5rem;
+  --page-horizontal-padding: 0.5rem;
+  --main-vertical-padding: 1rem;
 }
 
 body {
@@ -35,7 +36,8 @@ body {
 header,
 main,
 footer {
-  padding: 0 var(--page-padding) 0 var(--page-padding);
+  padding-left: var(--page-horizontal-padding);
+  padding-right: var(--page-horizontal-padding);
 }
 
 header,
@@ -49,6 +51,10 @@ header {
 
 main {
   grid-area: main;
+
+  padding-top: var(--main-vertical-padding);
+  padding-bottom: var(--main-vertical-padding);
+
   background: var(--color-page-bg);
 }
 
