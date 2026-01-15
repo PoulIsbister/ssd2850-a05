@@ -127,7 +127,7 @@
 
 /* Vertical */
 .classified--vertical {
-  --classified-width: 240px;
+  --classified-width: 200px;
   --classified-height: 500px;
 
   flex-direction: column;
