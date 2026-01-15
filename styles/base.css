@@ -81,3 +81,7 @@ footer {
 a {
   color: var(--black);
 }
+
+ul {
+  margin: 0;
+}
