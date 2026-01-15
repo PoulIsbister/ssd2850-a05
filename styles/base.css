@@ -16,6 +16,8 @@
 :root {
   --page-horizontal-padding: 0.5rem;
   --main-vertical-padding: 1rem;
+
+  --page-max-width: 72em;
 }
 
 body {
@@ -65,6 +67,11 @@ main {
   padding-bottom: var(--main-vertical-padding);
 
   background: var(--color-page-bg);
+}
+
+.main__inner {
+  width: clamp(0px, 100%, var(--page-max-width));
+  margin: 0 auto;
 }
 
 footer {

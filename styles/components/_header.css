@@ -1,13 +1,17 @@
-.header-inner {
+.header__inner {
   display: flex;
-  height: 2rem;
+  flex-direction: column;
+
+  width: clamp(0px, 100%, var(--page-max-width));
+  margin: 0 auto;
 }
 
-.header-inner__subcribe {
+.header__cta {
+  align-self: end;
+
+  padding: 0.25rem 0;
+
   text-decoration: none;
-  align-self: center;
-  position: absolute;
-  right: 5%;
 }
 
 .nav-bar {
