@@ -2,6 +2,12 @@
    ARTICLE CONTENT
    ========================= */
 
+.article {
+  position: relative;
+
+  overflow: hidden;
+}
+
 .article .article__image-wrapper {
   margin: 0;
 }
@@ -31,7 +37,6 @@
   padding: 1rem 1.25rem 1.25rem;
 
   border: 1px solid var(--primary-700);
-  border-radius: 0.5rem;
 
   background: var(--color-page-bg);
 
@@ -45,6 +50,54 @@
 .article.article--small:hover {
   background: var(--color-chrome-bg);
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.article__grabber {
+  position: absolute;
+  inset: 0;
+
+  display: grid;
+  place-content: center;
+
+  margin: 0;
+
+  overflow: hidden;
+
+  pointer-events: none;
+}
+
+.article__grabber > img {
+  object-fit: cover;
+}
+
+.article__grabber + .article__title {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  width: 100%;
+
+  padding-left: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+
+  color: var(--color-alt);
+
+  vertical-align: bottom;
+
+  z-index: 10;
+}
+
+.article__grabber + .article__title:after {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  background: var(--primary-800);
+
+  opacity: 0.8;
+  z-index: -10;
 }
 
 /* =========================
@@ -99,14 +152,11 @@ summary::-webkit-details-marker {
   display: none;
 }
 
-summary::before {
-  content: "▸ ";
-  display: inline-block;
-  margin-right: 0.25rem;
-}
+.article.article--small summary {
+  position: absolute;
+  inset: 0;
 
-details[open] summary::before {
-  content: "▾ ";
+  z-index: 10;
 }
 
 /* =========================

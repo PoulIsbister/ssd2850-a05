@@ -5,16 +5,19 @@
 
 .article-list__wrapper {
   /* place-content: center; */
-  flex-grow: 1;
+  flex-grow: 0;
 }
 
 .article-list {
   display: flex;
   flex-wrap: wrap;
+
+  gap: 0.5rem;
 }
 
 .article-list > * {
   flex-grow: 1;
+  aspect-ratio: 6/5;
 }
 
 .section-heading {
@@ -32,7 +35,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
-    
+
     gap: 1rem;
   }
 
