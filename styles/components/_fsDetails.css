@@ -106,6 +106,12 @@
   translate: -50% -50%;
 }
 
+.details-fs[open] > summary * {
+  width: 0;
+  height: 0;
+  pointer-events: none;
+}
+
 .details-fs[open] > summary:hover {
   background: var(--neutral-100);
 }
