@@ -19,11 +19,6 @@
   margin-bottom: 0.75rem;
 }
 
-.article p {
-  font-size: 0.95rem;
-  line-height: 1.55;
-}
-
 .article a {
   text-decoration: underline;
 }
@@ -112,11 +107,6 @@ summary::before {
 
 details[open] summary::before {
   content: "▾ ";
-}
-
-details p {
-  margin-top: 1rem;
-  line-height: 1.6;
 }
 
 /* =========================
