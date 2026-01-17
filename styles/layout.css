@@ -16,6 +16,10 @@
   isolation: isolate;
 }
 
+.aside--extras > * {
+  pointer-events: auto;
+}
+
 /* Column Layouts */
 .main--two-column {
   --main--two-column-padding: 1rem;
