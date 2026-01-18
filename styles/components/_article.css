@@ -113,7 +113,7 @@
   padding-bottom: 2rem;
   border-bottom: 3px solid var(--primary-800);
 
-  max-width: 900px;
+  max-height: 32rem;
 }
 
 .article--featured .article__image-wrapper {
@@ -178,9 +178,15 @@ summary::-webkit-details-marker {
    RESPONSIVE TWEAKS
    ========================= */
 
-@media (max-width: 600px) {
+@media (min-width: 40em) {
   .article--featured .article__title {
     font-size: 1.7rem;
+  }
+}
+
+@media (min-width: 64em) {
+  .article--featured {
+    max-height: unset;
   }
 }
 
