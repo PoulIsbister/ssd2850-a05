@@ -29,7 +29,7 @@
 }
 
 .details-fs[open]::details-content {
-  max-height: calc(100% - var(--close-button-height));
+  max-height: 100%;
 
   overflow: hidden;
   overflow-y: auto;
@@ -80,9 +80,9 @@
 }
 
 .details-fs[open] > summary {
-  position: sticky;
-  top: 0;
-  left: 100%;
+  position: absolute;
+  top: var(--padding);
+  left: calc(100% - var(--close-button-height) - var(--padding));
 
   width: 0;
   height: 0;
@@ -91,8 +91,12 @@
   margin-bottom: 0.5rem;
 
   border-radius: 0.25rem;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
 
   color: transparent;
+  background: var(--color-page-bg);
 
   transition: background 200ms ease;
 }
