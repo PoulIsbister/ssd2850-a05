@@ -64,6 +64,8 @@
   overflow: hidden;
 
   pointer-events: none;
+
+  transition: scale 2s ease;
 }
 
 .article__grabber > img {
@@ -100,6 +102,10 @@
 
   opacity: 0.8;
   z-index: -10;
+}
+
+.article:hover .article__grabber {
+  scale: 1.05;
 }
 
 /* =========================
