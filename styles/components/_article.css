@@ -75,13 +75,16 @@
 }
 
 .article__grabber + .article__title {
+  --title-padding-x: 0.5rem;
+
   position: absolute;
   left: 0;
   bottom: 0;
 
-  width: 100%;
+  width: calc(100% - var(--title-padding-x) * 2);
 
-  padding-left: 1rem;
+  padding-left: var(--title-padding-x);
+  padding-right: var(--title-padding-x);
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 
