@@ -248,6 +248,10 @@ summary::-webkit-details-marker {
   line-height: 1.2;
 }
 
+.article__prose p {
+  line-height: 1.5;
+}
+
 .article__prose .byline {
   color: var(--neutral-500);
   font-style: italic;
