@@ -18,7 +18,10 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "serve": "live-server --port=3000 --no-browser --watch=**/*.html,**/*.css .",
     "format": "npx prettier -w index.html",
-    "prepare": "husky"
+    "prepare": "husky",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "devDependencies": {
     "husky": "^9.1.7",
