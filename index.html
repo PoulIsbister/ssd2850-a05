@@ -12,8 +12,6 @@
     <link rel="stylesheet" href="styles/components/_fsDetails.css" />
     <link rel="stylesheet" href="styles/components/_timeCube.css" />
 
-    <script type="module" src="scripts/popupAds/draggable.js" defer></script>
-    <script type="module" src="scripts/popupAds/schizoToggle.js" defer></script>
     <script src="https://cdn.tailwindcss.com"></script>
 
     <title>Index</title>
@@ -22,7 +20,6 @@
   <body>
     <header>
       <div class="header__inner">
-        <a class="header__cta" href="#"><span>Subscribe</span></a>
         <div class="nav-bar">
           <p class="nav-bar__title">Profile Page</p>
           <nav class="nav-bar__topics">
@@ -52,7 +49,7 @@
       <main>
         <div class="main__inner main--two-column">
           <div class="main__content">
-            <section class="grid grid-cols-1 gap-3">
+            <section class="grid grid-row-2 gap-3 md:grid-rows-1">
               <h2 id="sec-today" class="article-group__heading">
                 Today's Top Stories
               </h2>
@@ -310,6 +307,7 @@
                     </div>
                   </details>
                 </article>
+
                 <!-- Grid of News Articles -->
                 <div class="article-list">
                   <article class="article article--small">
@@ -650,7 +648,7 @@
                 >
               </div>
             </div> -->
-            <section class="article-group">
+            <section class="grid grid-row-3 gap-3">
               <h2 id="sec-pawel" class="article-group__heading">
                 Pawel's Corner
               </h2>
