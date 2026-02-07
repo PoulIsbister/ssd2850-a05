@@ -19,8 +19,8 @@
 
   <body>
     <header>
-      <div class="header__inner">
-        <div class="nav-bar">
+      <div class="flex flex-col">
+        <div class="flex flex-row">
           <p class="nav-bar__title">Profile Page</p>
           <nav class="nav-bar__topics">
             <div class="nav-bar__track">
@@ -45,456 +45,257 @@
         </div>
       </div>
     </header>
-    <div>
-      <main>
-        <div class="main__inner main--two-column">
-          <div class="main__content">
-            <section class="rounded-2xl p-6 md:p-10 mb-8">
-              <h2
-                id="sec-today"
-                class="article-group__heading text-3xl font-bold border-b pb-2 border-slate-300"
-              >
-                Profile Highlights
-              </h2>
-              <div class="article-container">
-                <article
-                  class="article article--featured rounded-2xl p-6 shadow-sm"
-                >
-                  <div class="article__image-wrapper">
-                    <img
-                      class="article__image"
-                      src="images/articles/canadian_space.webp"
-                      alt="A picture of a miniature Canadian rocket at the Atlantic Spaceport Complex."
-                      title="A miniature Canadian rocket  at the Atlantic Spaceport Complex."
-                    />
-                  </div>
+    <main>
+      <div class="main__inner main--two-column">
+        <div class="main__content">
+          <section class="rounded-2xl p-6 md:p-10 mb-8">
+            <h2
+              id="sec-today"
+              class="article-group__heading text-3xl font-bold pb-2 border-slate-300"
+            >
+              Profile Highlights
+            </h2>
+            <div class="article-container">
+              <article class="article article--featured p-6 shadow-sm">
+                <div class="article__image-wrapper">
+                  <img
+                    class="article__image"
+                    src="images/articles/canadian_space.webp"
+                    alt="A picture of a miniature Canadian rocket at the Atlantic Spaceport Complex."
+                    title="A miniature Canadian rocket  at the Atlantic Spaceport Complex."
+                  />
+                </div>
 
+                <h3 class="article__title article-list__title">
+                  Preventing Foreign Misuse of Space Launch Infrastructure
+                </h3>
+                <br />
+                <details class="details-fs">
+                  <summary>
+                    <div>Read more</div>
+                  </summary>
+                  <div class="article__prose">
+                    <span class="tag tag-tech">Innovation</span>
+                    <p class="title">
+                      Preventing Foreign Misuse of Launch Infrastructure
+                    </p>
+                    <div class="byline">
+                      By <span>Ethan Yeung</span> |
+                      <time datetime="2026-01-16">Jan 16, 2026</time>
+                    </div>
+                  </div>
+                </details>
+              </article>
+
+              <!-- Grid of News Articles -->
+              <div class="article-list">
+                <article class="article article--small">
+                  <figure class="article__grabber">
+                    <img
+                      src="https://i.pinimg.com/736x/0e/ee/9b/0eee9bfaf9217cacbc7aa387b6f07bb9.jpg"
+                      alt="Cat photo"
+                    />
+                  </figure>
                   <h3 class="article__title article-list__title">
-                    Preventing Foreign Misuse of Space Launch Infrastructure
+                    Uncle Ted's Wisdom
                   </h3>
-                  <br />
                   <details class="details-fs">
-                    <summary>
-                      <div>Read more</div>
-                    </summary>
+                    <summary></summary>
                     <div class="article__prose">
-                      <span class="tag tag-tech">Innovation</span>
-                      <p class="title">
-                        Preventing Foreign Misuse of Launch Infrastructure
-                      </p>
+                      <span class="tag tag-politics">Politics</span>
+                      <p class="title">Uncle Ted's Wisdom</p>
                       <div class="byline">
-                        By <span>Ethan Yeung</span> |
+                        By <span>Uncle Ted</span> |
                         <time datetime="2026-01-16">Jan 16, 2026</time>
+                      </div>
+
+                      <p class="lead-text">
+                        One neat trick to improve your standard of living?
+                      </p>
+
+                      <div class="article__image-wrapper">
+                        <img
+                          class="article__image"
+                          src="images/placeholderFallout.webp"
+                          alt="Alt text for an image in this article, if I choose to include an image."
+                          title="Placeholder secrets the ELITE don't want you to know!"
+                        />
                       </div>
                     </div>
                   </details>
                 </article>
+                <article class="article article--small">
+                  <figure class="article__grabber">
+                    <img
+                      src="images/articles/timecube.webp"
+                      alt="A mathematical approximation of what a timecube might look like."
+                      title="A mathematical approximation of what a timecube might look like."
+                    />
+                  </figure>
+                  <h3 class="article__title article-list__title">
+                    The Time Cube
+                  </h3>
+                  <details class="details-fs">
+                    <summary></summary>
+                    <div class="timecube-container">
+                      <h4>
+                        TIME CUBE<br />
+                        NATURE’S 4-DAY ROTATION
+                      </h4>
+                    </div>
 
-                <!-- Grid of News Articles -->
-                <div class="article-list">
-                  <article class="article article--small">
-                    <figure class="article__grabber">
+                    <div class="article__image-wrapper">
                       <img
-                        src="https://i.pinimg.com/736x/0e/ee/9b/0eee9bfaf9217cacbc7aa387b6f07bb9.jpg"
-                      />
-                    </figure>
-                    <h3 class="article__title article-list__title">
-                      Uncle Ted's Wisdom
-                    </h3>
-                    <details class="details-fs">
-                      <summary></summary>
-                      <div class="article__prose">
-                        <span class="tag tag-politics">Politics</span>
-                        <p class="title">Uncle Ted's Wisdom</p>
-                        <div class="byline">
-                          By <span>Uncle Ted</span> |
-                          <time datetime="2026-01-16">Jan 16, 2026</time>
-                        </div>
-
-                        <p class="lead-text">
-                          One neat trick to improve your standard of living?
-                        </p>
-
-                        <div class="article__image-wrapper">
-                          <img
-                            class="article__image"
-                            src="images/placeholderFallout.webp"
-                            alt="Alt text for an image in this article, if I choose to include an image."
-                            title="Placeholder secrets the ELITE don't want you to know!"
-                          />
-                        </div>
-                      </div>
-                    </details>
-                  </article>
-                  <article class="article article--small">
-                    <figure class="article__grabber">
-                      <img
+                        class="article__image"
                         src="images/articles/timecube.webp"
                         alt="A mathematical approximation of what a timecube might look like."
                         title="A mathematical approximation of what a timecube might look like."
                       />
-                    </figure>
-                    <h3 class="article__title article-list__title">
-                      The Time Cube
-                    </h3>
-                    <details class="details-fs">
-                      <summary></summary>
-                      <div class="timecube-container">
-                        <h4>
-                          TIME CUBE<br />
-                          NATURE’S 4-DAY ROTATION
-                        </h4>
-                      </div>
-
-                      <div class="article__image-wrapper">
-                        <img
-                          class="article__image"
-                          src="images/articles/timecube.webp"
-                          alt="A mathematical approximation of what a timecube might look like."
-                          title="A mathematical approximation of what a timecube might look like."
-                        />
-                      </div>
-                    </details>
-                  </article>
-                  <article class="article article--small">
-                    <figure class="article__grabber">
-                      <img
-                        src="images/articles/art_aislop_art2_suggestions.webp"
-                      />
-                    </figure>
-                    <h3 class="article__title article-list__title">
-                      Misadventures With AI
-                    </h3>
-                    <details class="details-fs">
-                      <summary></summary>
-                      <div class="article__prose">
-                        <span class="tag tag-tech">Innovation</span>
-                        <p class="title">Misadventures With AI</p>
-                        <div class="byline">
-                          By <span>Ethan Yeung</span> |
-                          <time datetime="2026-01-16">Jan 16, 2026</time>
-                        </div>
-                        <div class="article__image-wrapper">
-                          <img
-                            class="article__image"
-                            src="images/articles/ai_slop_ui.webp"
-                            alt="A picture of a coding interface with suggested code."
-                            title="A picture of a coding interface with suggested code."
-                          />
-                        </div>
-                      </div>
-                    </details>
-                  </article>
-                </div>
-              </div>
-            </section>
-            <!-- <div class="mx-auto classified">
-              <figure class="classified__media">
-                <img
-                  src="https://media1.tenor.com/m/h3T2PlNUym4AAAAC/absoluteslop.gif"
-                  alt="Product"
-                  class="classified__image"
-                />
-              </figure>
-              <div class="classified__content">
-                <p class="classified__title">Just Garbage</p>
-                <p class="classified__description">
-                  Looking to consume? You can stop thinking now. Purchase this
-                  product.
-                </p>
-                <a href="#" class="classified__cta"
-                  >Where's your credit card?</a
-                >
-              </div>
-            </div> -->
-            <section class="grid grid-row-3 gap-3">
-              <h2 id="sec-pawel" class="article-group__heading">
-                Pawel's Corner
-              </h2>
-              <div class="article-container">
-                <article class="article article--featured">
-                  <div class="article__image-wrapper">
+                    </div>
+                  </details>
+                </article>
+                <article class="article article--small">
+                  <figure class="article__grabber">
                     <img
-                      class="article__image"
-                      src="https://images.steamusercontent.com/ugc/11179236044175502165/A3742ECD8DD3909B5954A8300020C200A34A1EE2/?imw=268&imh=268&ima=fit&impolicy=Letterbox&imcolor=%23000000"
-                      alt=""
-                      title="FEATURED placeholder information that will BLOW YOUR MIND!"
+                      src="images/articles/art_aislop_art2_suggestions.webp"
                     />
-                  </div>
-
+                  </figure>
                   <h3 class="article__title article-list__title">
-                    Ordnance version 0.6 releases
+                    Misadventures With AI
                   </h3>
-
                   <details class="details-fs">
-                    <summary>
-                      <div>Read more</div>
-                    </summary>
+                    <summary></summary>
                     <div class="article__prose">
-                      <span class="tag tag-tech">Teardown Mod</span>
-                      <p class="title">Ordnance version 0.6 releases</p>
+                      <span class="tag tag-tech">Innovation</span>
+                      <p class="title">Misadventures With AI</p>
                       <div class="byline">
-                        By <span>Pawel Bartusiak</span> |
-                        <time datetime="2025-08-28">August 28, 2025</time>
+                        By <span>Ethan Yeung</span> |
+                        <time datetime="2026-01-16">Jan 16, 2026</time>
                       </div>
-                      <p class="lead-text">
-                        A complete UI overhaul and a new shell type awaits you
-                        in this latest version!
-                      </p>
                       <div class="article__image-wrapper">
                         <img
                           class="article__image"
-                          src="images/articles/ordnance-0.6/20260117150143_1.jpg"
-                          alt=""
-                          title=""
-                        />
-                      </div>
-
-                      <blockquote>
-                        "It's epic" - FloppyDisk, Ordnance's Developer
-                      </blockquote>
-                      <div class="article__image-wrapper">
-                        <img
-                          class="article__image"
-                          src="images/articles/ordnance-0.6/20260117151040_1.jpg"
+                          src="images/articles/ai_slop_ui.webp"
+                          alt="A picture of a coding interface with suggested code."
+                          title="A picture of a coding interface with suggested code."
                         />
                       </div>
                     </div>
                   </details>
                 </article>
-                <!-- Grid of News Articles -->
-                <div class="article-list">
-                  <article class="article article--small">
-                    <figure class="article__grabber">
-                      <img src="images/articles/gustav/20240729_202517.webp" />
-                    </figure>
-                    <h3 class="article__title">Mainland Mogger Strikes</h3>
-                    <details class="details-fs">
-                      <summary></summary>
-                      <div class="article__prose">
-                        <span class="tag tag-breaking">Crime</span>
-                        <p class="title">Mainland Mogger Strikes</p>
-                        <div class="byline">
-                          By <span>Pawel Bartusiak</span> |
-                          <time datetime="2026-01-16">Jan 16, 2026</time>
-                        </div>
-
-                        <p class="lead-text">Looksmaxxers beware.</p>
-
-                        <div class="article__image-wrapper">
-                          <img
-                            class="article__image"
-                            src="images/articles/gustav/20240729_202517.webp"
-                          />
-                        </div>
-                      </div>
-                    </details>
-                  </article>
-                  <article class="article article--small">
-                    <figure class="article__grabber">
-                      <img
-                        src="https://media1.tenor.com/m/APx9ts7mh8MAAAAC/simon-hytale.gif"
-                      />
-                    </figure>
-                    <h3 class="article__title">
-                      Hytale is kinda cool, actually
-                    </h3>
-                    <details class="details-fs">
-                      <summary></summary>
-                      <div class="article__prose">
-                        <span class="tag tag-politics">Opinion</span>
-                        <p class="title">Hytale is kinda cool, actually</p>
-                        <div class="byline">
-                          By <span>Pawel Bartusiak</span> |
-                          <time datetime="2026-01-18">Jan 18, 2026</time>
-                        </div>
-
-                        <p class="lead-text">Hytale seems like a fun game</p>
-
-                        <!-- <div class="article__image-wrapper">
-                          <img
-                            class="article__image"
-                            src="https://media1.tenor.com/m/p1_jfWV8qIMAAAAd/hytale.gif"
-                          />
-                        </div> -->
-                      </div>
-                    </details>
-                  </article>
-
-                  <!-- <div class="mx-auto classified classified--media-only">
-                    <figure class="classified__media">
-                      <img
-                        src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.zabka.pl%2Fwp-content%2Fuploads%2F2024%2F11%2F06084120%2Fstreet-food-hero-desktop-november.jpg&f=1&nofb=1&ipt=ca22ccb2c27ecd5324443cdb998dfadbc5ec42cb8bd2543010635a0664dc675b"
-                        alt="Product"
-                        class="classified__image"
-                      />
-                    </figure>
-                  </div> -->
-                </div>
               </div>
-            </section>
-            <!-- <div class="mx-auto classified classified--media-only">
-              <figure class="classified__media">
-                <img
-                  src="https://media1.tenor.com/m/Z50Lj31JIaQAAAAC/fruit-gushers-commercial.gif"
-                  alt="Product"
-                  class="classified__image"
-                />
-              </figure>
-            </div> -->
-            <section class="article-group">
-              <h2 id="sec-finance" class="article-group__heading">Finance</h2>
-              <div class="article-container">
-                <article class="article article--featured">
-                  <div class="article__image-wrapper">
-                    <img
-                      class="article__image"
-                      src="images/articles/pexels-rdne-8370332.jpg"
-                      alt="Whiteboard with crypto at the center of the economy"
-                      title="FEATURED placeholder information that will BLOW YOUR MIND!"
-                    />
+            </div>
+          </section>
+          <section class="grid grid-row-3 gap-3">
+            <h2 id="sec-pawel" class="article-group__heading">
+              Pawel's Corner
+            </h2>
+            <div class="article-container">
+              <article class="article article--featured p-6 shadow-sm">
+                <div class="article__image-wrapper">
+                  <img
+                    class="article__image"
+                    src="https://images.steamusercontent.com/ugc/11179236044175502165/A3742ECD8DD3909B5954A8300020C200A34A1EE2/?imw=268&imh=268&ima=fit&impolicy=Letterbox&imcolor=%23000000"
+                    alt=""
+                    title="FEATURED placeholder information that will BLOW YOUR MIND!"
+                  />
+                </div>
+
+                <h3 class="article__title article-list__title">
+                  Ordnance version 0.6 releases
+                </h3>
+
+                <details class="details-fs">
+                  <summary>
+                    <div>Read more</div>
+                  </summary>
+                  <div class="article__prose">
+                    <span class="tag tag-tech">Teardown Mod</span>
+                    <p class="title">Ordnance version 0.6 releases</p>
+                    <div class="byline">
+                      By <span>Pawel Bartusiak</span> |
+                      <time datetime="2025-08-28">August 28, 2025</time>
+                    </div>
+                    <p class="lead-text">
+                      A complete UI overhaul and a new shell type awaits you in
+                      this latest version!
+                    </p>
+                    <div class="article__image-wrapper">
+                      <img
+                        class="article__image"
+                        src="images/articles/ordnance-0.6/20260117150143_1.jpg"
+                        alt=""
+                        title=""
+                      />
+                    </div>
+
+                    <blockquote>
+                      "It's epic" - FloppyDisk, Ordnance's Developer
+                    </blockquote>
+                    <div class="article__image-wrapper">
+                      <img
+                        class="article__image"
+                        src="images/articles/ordnance-0.6/20260117151040_1.jpg"
+                      />
+                    </div>
                   </div>
-
-                  <h3 class="article__title article-list__title">
-                    Crypto: Finance, but With More Faith
-                  </h3>
-
+                </details>
+              </article>
+              <!-- Grid of News Articles -->
+              <div class="article-list">
+                <article class="article article--small">
+                  <figure class="article__grabber">
+                    <img src="images/articles/gustav/20240729_202517.webp" />
+                  </figure>
+                  <h3 class="article__title">Mainland Mogger Strikes</h3>
                   <details class="details-fs">
-                    <summary>
-                      <div>Read more</div>
-                    </summary>
+                    <summary></summary>
                     <div class="article__prose">
-                      <span class="tag tag-tech">Finance</span>
-                      <p class="title">Crypto: Finance, but With More Faith</p>
+                      <span class="tag tag-breaking">Crime</span>
+                      <p class="title">Mainland Mogger Strikes</p>
                       <div class="byline">
-                        By <span>Chad G. Perry The Third</span> |
+                        By <span>Pawel Bartusiak</span> |
                         <time datetime="2026-01-16">Jan 16, 2026</time>
                       </div>
 
-                      <p class="lead-text">Experts in shambles.</p>
+                      <p class="lead-text">Looksmaxxers beware.</p>
 
-                      <article class="article article--featured">
-                        <div class="article__image-wrapper">
-                          <img
-                            class="article__image"
-                            src="images/articles/angry-broker.jpg"
-                            alt="Man sits at desk with head in hands after bad stockmarket"
-                            title="FEATURED placeholder information that will BLOW YOUR MIND!"
-                          />
-                        </div>
-                      </article>
+                      <div class="article__image-wrapper">
+                        <img
+                          class="article__image"
+                          src="images/articles/gustav/20240729_202517.webp"
+                        />
+                      </div>
                     </div>
                   </details>
                 </article>
-                <!-- Grid of News Articles -->
-                <div class="article-list">
-                  <article class="article article--small">
-                    <figure class="article__grabber">
-                      <img
-                        src="https://i.pinimg.com/736x/0e/ee/9b/0eee9bfaf9217cacbc7aa387b6f07bb9.jpg"
-                      />
-                    </figure>
-                    <h3 class="article__title">
-                      Economy Enters Funhouse Mirror Phase
-                    </h3>
-                    <details class="details-fs">
-                      <summary></summary>
-                      <div class="article__prose">
-                        <span class="tag tag-tech">Finance</span>
-                        <p class="title">
-                          Economy Enters Funhouse Mirror Phase
-                        </p>
-                        <div class="byline">
-                          By <span>Chad G. Perry The Third</span> |
-                          <time datetime="2026-01-16">Jan 16, 2026</time>
-                        </div>
-
-                        <p class="lead-text">
-                          Experts Assure Public This Is Normal
-                        </p>
-
-                        <p>This is a <a href="#">link to another page</a>.</p>
+                <article class="article article--small">
+                  <figure class="article__grabber">
+                    <img
+                      src="https://media1.tenor.com/m/APx9ts7mh8MAAAAC/simon-hytale.gif"
+                    />
+                  </figure>
+                  <h3 class="article__title">Hytale is kinda cool, actually</h3>
+                  <details class="details-fs">
+                    <summary></summary>
+                    <div class="article__prose">
+                      <span class="tag tag-politics">Opinion</span>
+                      <p class="title">Hytale is kinda cool, actually</p>
+                      <div class="byline">
+                        By <span>Pawel Bartusiak</span> |
+                        <time datetime="2026-01-18">Jan 18, 2026</time>
                       </div>
-                    </details>
-                  </article>
-                  <!-- <div class="classified classified--media-only">
-                    <figure class="classified__media">
-                      <img
-                        src="https://media1.tenor.com/m/yCNQyjnZjaEAAAAd/tgif-thank-gnome-its-friday.gif"
-                        alt="Product"
-                        class="classified__image"
-                      />
-                    </figure>
-                  </div>
-                  <div class="classified classified--media-only">
-                    <figure class="classified__media">
-                      <img
-                        src="https://media1.tenor.com/m/EVWnALUx8vIAAAAd/grubhub-commercial.gif"
-                        alt="Product"
-                        class="classified__image"
-                      />
-                    </figure> 
-                  </div> -->
-                </div>
-              </div>
-            </section>
-          </div>
-          <!-- <aside class="aside--extras">
-            <div class="classified classified--vertical">
-              <figure class="classified__media">
-                <img
-                  src="https://media.tenor.com/u9oRYQZI_SQAAAAM/pig-slap.gif"
-                  alt="Product"
-                  class="classified__image"
-                />
-              </figure>
-              <div class="classified__content">
-                <p class="classified__title">Bovine Banking</p>
-                <p class="classified__description">
-                  Slap the markets like they owe you money with our
-                  commission-free trade accounts.
-                </p>
-                <a href="#" class="classified__cta">Open account today!</a>
+
+                      <p class="lead-text">Hytale seems like a fun game</p>
+                    </div>
+                  </details>
+                </article>
               </div>
             </div>
-            <div class="classified classified--vertical classified--media-only">
-              <figure class="classified__media">
-                <img
-                  src="https://media.tenor.com/qOvPJl0RYfgAAAA1/squidward-tentacles-knocking-on-door.webp"
-                  alt="Product"
-                  class="classified__image"
-                />
-              </figure>
-            </div>
-            <div class="classified classified--vertical classified--media-only">
-              <figure class="classified__media">
-                <img
-                  src="https://media1.tenor.com/m/wvXUGY98sdsAAAAd/snacks-popcorners.gif"
-                  alt="Product"
-                  class="classified__image"
-                />
-              </figure>
-            </div>
-            <div class="classified classified--vertical">
-              <figure class="classified__media">
-                <img
-                  src="https://media1.tenor.com/m/k3fIwVDGC8wAAAAC/pinoy-ads-discount.gif"
-                  alt="Product"
-                  class="classified__image"
-                />
-              </figure>
-              <div class="classified__content">
-                <p class="classified__title">Pinoy Phoning</p>
-                <p class="classified__description">
-                  Call internationally for cents on the dollar.
-                </p>
-                <a href="#" class="classified__cta">Purchase</a>
-              </div>
-            </div>
-          </aside> -->
+          </section>
         </div>
-      </main>
-    </div>
+      </div>
+    </main>
     <footer class="footer">
       <div class="footer-inner">
         <p class="footer__slogan">Papering our news since yesterday</p>
