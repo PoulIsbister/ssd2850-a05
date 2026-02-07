@@ -1,8 +1,8 @@
-@import "./colours.scss";
-@import "./utilities/normalize.scss";
-@import "./utilities/icons.scss";
-@import "./utilities/utils.scss";
-@import "./layout.scss";
+@use "./colours";
+@use "./utilities/normalize";
+@use "./utilities/icons";
+@use "./utilities/utils";
+@use "./layout";
 
 @font-face {
   font-family: PlayfairDisplay;
