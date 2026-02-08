@@ -1,0 +1,14 @@
+@mixin card($bg, $border, $shadow) {
+  background: $bg;
+  border: 1px solid $border;
+  box-shadow: $shadow;
+}
+
+@mixin hover-transition($props...) {
+  transition: $props 0.15s ease;
+}
+
+@mixin abs-fill {
+  position: absolute;
+  inset: 0;
+}
