@@ -1,5 +1,7 @@
 # SSD2850 - Assignment 04
 
+# To run the program please use npm run dev
+
 ### Group Members
 * Ethan
 * Pawel
