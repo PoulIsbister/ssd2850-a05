@@ -1,0 +1,34 @@
+@mixin card($bg, $border, $shadow) {
+  background: $bg;
+  border: 1px solid $border;
+  box-shadow: $shadow;
+}
+
+@mixin hover-transition($props...) {
+  transition: $props 0.15s ease;
+}
+
+@mixin abs-fill {
+  position: absolute;
+  inset: 0;
+}
+
+@mixin flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin hover-lift($duration: 500ms) {
+  transition:
+    box-shadow $duration ease,
+    translate $duration ease;
+
+  &:hover,
+  &:focus-within {
+    box-shadow:
+      0 4px 6px -1px rgb(0 0 0 / 0.1),
+      0 2px 4px -2px rgb(0 0 0 / 0.1);
+
+    translate: 0 -0.125rem;
+  }
+}

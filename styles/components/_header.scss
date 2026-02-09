@@ -1,0 +1,106 @@
+@use "../mixins";
+@use "../varibles";
+
+.header {
+  &__inner {
+    @include flex-col;
+
+    width: clamp(0px, 100%, var(--page-max-width));
+    margin: 0 auto;
+  }
+
+  &__cta {
+    align-self: end;
+    padding: $space-xs 0;
+    text-decoration: none;
+  }
+}
+
+/* =========================
+   NAV BAR
+   ========================= */
+
+.nav-bar {
+  @include flex-col;
+  align-items: center;
+
+  &__container {
+    @include flex-col;
+    flex-wrap: wrap;
+  }
+
+  &__title {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: $space-sm 0 0;
+    color: var(--primary-900);
+  }
+
+  &__track {
+    @include flex-col;
+  }
+
+  &__list {
+    --link-padding-x: 0.5rem;
+    --link-padding-y: 0.75rem;
+
+    @extend %unstyled-list;
+
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &__item {
+    --trans-hover-duration: 500ms;
+
+    position: relative;
+    padding: var(--link-padding-y) var(--link-padding-x);
+    border-radius: $radius-sm;
+    cursor: pointer;
+
+    @include hover-lift(var(--trans-hover-duration));
+
+    &::after {
+      @extend %nav-underline;
+
+      --trim-width-less: 2rem;
+
+      width: calc(100% - var(--trim-width-less));
+      translate: calc(var(--trim-width-less) * 0.5) 1px;
+
+      transition: background 500ms ease-in-out;
+    }
+
+    &:hover::after,
+    &:focus-within::after {
+      background-color: var(--primary-900);
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+  }
+}
+
+@media (min-width: $bp-lg) {
+  .nav-bar {
+    flex-direction: row;
+    gap: 2rem;
+
+    &__container {
+      flex-direction: row;
+      gap: $space-md;
+      justify-content: center;
+    }
+
+    &__list {
+      --link-padding-x: 2rem;
+      justify-content: center;
+    }
+
+    &__title {
+      justify-self: end;
+    }
+  }
+}
